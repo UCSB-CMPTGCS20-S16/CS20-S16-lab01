@@ -11,16 +11,26 @@ In this session, you have:
 
 Briefly: your job is to fix the two functions defined in tempConversions so that they are correct.  Initially, it may appear that they *are* correct, because they are passing all of their test cases, as evidenced by the fact they when we click "test", the code appears "green".  However, we soon see that our tests are not complete enough.    So we first copy/paste two additional tests into the file `test_tempConversion.py`, and then the tests fail.   We then can correct the code and see that the functions are now correct.
 
-Here is some more information about each of these files:
+Once you've tried the code in cyber-dojo.org, we'll go over how to do this in submit.cs as well.
 
-## `tempConversions.py`
+# Step-by-Step
+
+## Step 1: Navigate to  http://cyber-dojo.org/enter/show/B2D1B6D3D0 and start a new session.
+
+You'll be assigned some "animal" as your avatar.  Then you'll see some files listed on the left.  You can click each file's name to see and edit its code.
+
+Take a moment, first to read the information below, as you click on each file and become familiar with the code inside.
+
+Here is some more information about each of the files you'll find in this project.
+
+### The file `tempConversions.py`
 
 * `tempConversions.py` is a Python *module*, i.e. a file containing definitions
 * a module can be imported for use into another file.
 * Specfically, the module `tempConversions` contains two function definitions, for `ftoC(fTemp)` and `ctoF(cTemp)`
 * The function definitions given here are not correct.  They work for some parameter values, but not for others.
 
-## `test_tempConversions.py`
+### The file `test_tempConversions.py`
 
 * This file starts with the line `from tempConversions import *`
 * The `*` on the previous line is called a *wildcard*.  In this case, the line means "import everything you possibly can from tempConversions, and make it available for use".
@@ -48,9 +58,33 @@ Note that you test for equality in Python, you must use `==` rather than `=`.
 
 An aside: testing numbers with decimals for exact equality is risky.  It isn't likely to be a problem in this exercise, and because this is a very introductory exercise, we are glossing over it.  But I want to acknowledge it as an issue.  The "For further exploration" section below has further information on this topic, which we'll revisit later in the course.
 
-## instructions
+### The file `instructions`
 
 This file contains instructions, including two additional test cases to copy/paste into the file test_tempConversions.py
+
+### The files `output` and `cyber-dojo.sh`
+
+These are files that control the Cyber Dojo website setup, and you can safely ignore them. 
+
+## Step 2: Click test--the tests will pass
+
+Click test.  The tests will pass.  But the code is still incorrect.   
+
+Look at the instructions file, and find the additional tests. Copy/paste those into the test_tempConversions.py file.
+
+Click test again.  The additional tests will fail.
+
+Then, fix the code in tempConversions.py so that the tests pass.
+
+## Step 3: Prepare submission for submit.cs
+
+NOTE: THESE INSTRUCTIONS AREN'T FINISHED YET..  I'LL SEND AN UPDATE VIA PIAZZA and GAUCHOSPACE when they are ready.
+
+
+
+
+
+
 
 # For further exploration
 
