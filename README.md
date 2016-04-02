@@ -170,12 +170,50 @@ That will look like this:
 
 Now that we've practiced this on the cyber-dojo.org site, let's do the same thing again, but this time, building our code in IDLE, and submitting to submit.cs.
 
+### Step 3a: Checking whether you have pip
+
 First, open up a command line on your computer, in whatever way is appropriate to your operating system:
-* Mac OS X: Open a Terminal window (here's [http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line](how))
-* Windows: Open a Command Prompt window (here's [http://www.digitalcitizen.life/7-ways-launch-command-prompt-windows-7-windows-8](how))
+* Mac OS X: Open a Terminal window (here's [how] (http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line))
+* Windows: Open a Command Prompt window (here's [how](http://www.digitalcitizen.life/7-ways-launch-command-prompt-windows-7-windows-8))
+* Linux: Open a shell prompt (If you need to ask how, I wonder: should you really be using Linux?)
 
-TODO.. FINISH THESE INSTRUCTIONS
+The reason we need a command prompt is that we are going to install a Python module using the `pip` command.
 
+The `pip` command allows us to extend the capabilities of Python with "add-ons". The add-on we going to add is one that helps us do testing.
+
+First, make sure that the `pip` command works on your system.  Try typing `pip --version` and pressing enter
+* That's two hyphens, i.e. `--` in front of the word `version`
+* Here's an example of what that might look like:
+
+```
+Phills-MacBook-Pro:~ pconrad$ pip --version
+pip 7.1.2 from /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (python 2.7)
+Phills-MacBook-Pro:~ pconrad$ 
+```
+
+If you get output such as this, that's a good sign.
+
+If instead, you get something like this, it's a bad sign: it means that `pip` is not installed on your system. In that case, post to Piazza, or ask for help during class or the instructor's office hours.
+
+```
+Phills-MacBook-Pro:~ pconrad$ pip --version
+-bash: pip: command not found
+Phills-MacBook-Pro:~ pconrad$ 
+```
+
+Assuming, though, that the `pip --version` command worked for you, try this: `pip install -U pytest`
+
+If it works properly, you'll get some output that ends with `Successfully installed pytest-2.9.1`, such as this:
+
+```
+Phills-MacBook-Pro:~ pconrad$ pip install -U pytest
+Collecting pytest
+...
+Successfully installed pytest-2.9.1
+Phills-MacBook-Pro:~ pconrad$ 
+```
+
+If that worked, 
 
 
 
