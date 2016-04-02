@@ -241,6 +241,27 @@ In that window, put the code from the `tempConversions.py` file that you were wo
 
 Now, do the same thing with a file called `test_tempConversions.py`&mdash;put the contents of `test_tempConversions.py` fron your cyber-dojo.org session into a file called `test_tempConversions.py` and then save it in the cs20/lab01 folder that you created.
 
+### Step 3e: Navigate your terminal / command prompt session to the directory cs20/lab01
+
+Now, in the terminal session / command prompt session that you opened up in Step 3a, you need to navigate to the cs20/lab00 folder.  The way you do that depends on what your Operating System is: Mac, Windows or Linux:
+
+* On Mac OS or Linux, use the cd command
+* On Windows, you also use the cd command (provided you are already on the correct drive).
+
+Once you are in the correct folder, you should be able to type  `ls` (on Mac/Linux) or `dir` (on Windows), and see the files you created, i.e. `tempConversions.py` and `test_tempConversions.py`.    Once you can see that, you are ready for the next step.
+
+### Step 3f: Run the tests using pytest
+
+Now, you are going to type the same command that the cyber-dojo.org site uses to run your tests.
+
+Here's what to type at the command line: `python -m pytest *test*.py`
+
+That's the same thing you'll see in the file `cyber-dojo.sh` that shows up on the cyber-dojo.org web site, and its the command that runs the tests.  If it works, it should look like this:
+
+```
+
+```
+
 
 
 TODO: CONTINUE FROM HERE
