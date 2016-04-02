@@ -168,8 +168,9 @@ That will look like this:
 
 ## Step 3: Prepare submission for submit.cs
 
-NOTE: THESE INSTRUCTIONS AREN'T FINISHED YET..  I'LL SEND AN UPDATE VIA PIAZZA and GAUCHOSPACE when they are ready.
+Now that we've practiced this on the cyber-dojo.org site, let's do the same thing again, but this time, building our code in IDLE, and submitting to submit.cs.
 
+TODO.. FINISH THESE INSTRUCTIONS
 
 
 
