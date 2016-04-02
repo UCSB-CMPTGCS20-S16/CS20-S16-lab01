@@ -1,7 +1,7 @@
 # CS20-S16-lab01
 UCSB-CMPTGCS20-S16, lab01 -- FtoC and CtoF with test cases
 
-This lab is based on a session from the website http://cyber-dojo.org, created just for this course.
+This lab is based on a session from the website http://cyber-dojo.org, created just for this course.T
 
 Here's the session: http://cyber-dojo.org/enter/show/E5E50A0CDF
 
@@ -223,6 +223,24 @@ Collecting pytest
 Successfully installed pytest-2.9.1
 Phills-MacBook-Pro:~ pconrad$ 
 ```
+
+### Step 3c: Make a cs20/lab01 folder
+
+
+Somewhere on your computer's disk space (i.e. on your computer's hard drive), create a folder called cs20.  Inside that folder, create another folder called lab01.  
+
+In general, its probably a good idea to keep your work for this class all in the same folder, and within that folder, create a separate folder for each lab.   This isn't exactly *required* (no-one is going to check), but it's probably a good habit to develop.   Also, the rest of the instructions will be written based on the assumption that you did things this way.  So, I'd strongly encourage you to do it. 
+
+### Step 3d: Set up the files `tempConversions.py` and `test_tempConversions.py` in IDLE
+
+Open IDLE.  You'll see the Python prompt `>>>` in the window that opens up automatically.
+
+In IDLE, go to the File menu, and select New.   An empty window should pop up where you can type in code.
+
+In that window, put the code from the `tempConversions.py` file that you were working with in the cyber-dojo.org session.   Save the file under the name `tempConversions.py`, inside the cs20/lab01 folder that you created earlier.
+
+Now, do the same thing with a file called `test_tempConversions.py`&mdash;put the contents of `test_tempConversions.py` fron your cyber-dojo.org session into a file called `test_tempConversions.py` and then save it in the cs20/lab01 folder that you created.
+
 
 
 TODO: CONTINUE FROM HERE
