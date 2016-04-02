@@ -3,7 +3,7 @@ UCSB-CMPTGCS20-S16, lab01 -- FtoC and CtoF with test cases
 
 This lab is based on a session from the website http://cyber-dojo.org, created just for this course.
 
-Here's the session: http://cyber-dojo.org/enter/show/B2D1B6D3D0
+Here's the session: http://cyber-dojo.org/enter/show/E5E50A0CDF
 
 In this session, you have:
 * a Python *module* called `tempConversions`
@@ -17,7 +17,7 @@ Once you've tried the code in cyber-dojo.org, we'll go over how to do this in su
 
 ## Step 1: Start a new session
 
-Navigate to  http://cyber-dojo.org/enter/show/B2D1B6D3D0 and click *start* to begin a new session.
+Navigate to  http://cyber-dojo.org/enter/show/E5E50A0CDF and click *start* to begin a new session.
 
 You'll be assigned some "animal" as your avatar. Click OK to accept this animal.
 
