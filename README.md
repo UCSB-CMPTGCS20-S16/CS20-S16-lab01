@@ -256,13 +256,24 @@ Now, you are going to type the same command that the cyber-dojo.org site uses to
 
 Here's what to type at the command line: `python -m pytest *test*.py`
 
-That's the same thing you'll see in the file `cyber-dojo.sh` that shows up on the cyber-dojo.org web site, and its the command that runs the tests.  If it works, it should look like this:
+That's the same thing you'll see in the file `cyber-dojo.sh` that shows up on the cyber-dojo.org web site, and its the command that runs the tests.  If it works, it should look something like this:
 
 ```
+Phills-MacBook-Pro:lab01 pconrad$ python -m pytest *test*.py
+============================= test session starts ==============================
+platform darwin -- Python 2.7.11, pytest-2.9.1, py-1.4.31, pluggy-0.3.1
+rootdir: /Users/pconrad/cs20/lab01, inifile: 
+collected 4 items 
 
+test_tempConversions.py ....
+
+=========================== 4 passed in 0.01 seconds ===========================
+Phills-MacBook-Pro:lab01 pconrad$ 
 ```
 
+If that works, then you are ready to upload your tempConversions.py file to submit.cs
 
+Here's where to upload it:
 
 TODO: CONTINUE FROM HERE
 
