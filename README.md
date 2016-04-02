@@ -170,6 +170,10 @@ That will look like this:
 
 Now that we've practiced this on the cyber-dojo.org site, let's do the same thing again, but this time, building our code in IDLE, and submitting to submit.cs.
 
+First, open up a command line on your computer, in whatever way is appropriate to your operating system:
+* Mac OS X: Open a Terminal window (here's [http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line](how))
+* Windows: Open a Command Prompt window (here's [http://www.digitalcitizen.life/7-ways-launch-command-prompt-windows-7-windows-8](how))
+
 TODO.. FINISH THESE INSTRUCTIONS
 
 
