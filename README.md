@@ -15,9 +15,21 @@ Once you've tried the code in cyber-dojo.org, we'll go over how to do this in su
 
 # Step-by-Step
 
-## Step 1: Navigate to  http://cyber-dojo.org/enter/show/B2D1B6D3D0 and start a new session.
+## Step 1: Start a new session
 
-You'll be assigned some "animal" as your avatar.  Then you'll see some files listed on the left.  You can click each file's name to see and edit its code.
+Navigate to  http://cyber-dojo.org/enter/show/B2D1B6D3D0 and click *start* to begin a new session.
+
+You'll be assigned some "animal" as your avatar. Click OK to accept this animal.
+
+Then you'll see some files listed on the left:
+
+* instructions
+* tempConversion.py
+* test_tempConversion.py
+* output
+* cyber-dojo.sh
+
+You can click each file's name to see and edit its code.
 
 Take a moment, first to read the information below, as you click on each file and become familiar with the code inside.
 
@@ -33,7 +45,7 @@ Here is some more information about each of the files you'll find in this projec
 ### The file `test_tempConversions.py`
 
 * This file starts with the line `from tempConversions import *`
-* The `*` on the previous line is called a *wildcard*.  In this case, the line means "import everything you possibly can from tempConversions, and make it available for use".
+* The `*` that ends this line is called a *wildcard*.  The meaning of this line of code is: "import everything you possibly can from tempConversions, and make it available for use".   Specifically, the function definitions for `ftoC(fTemp)` and `ctoF(cTemp)` are made available by this line of code.
 * There are then two function definitions that have names starting with `test_`.  They look like this:
 
 ```Python
@@ -62,9 +74,15 @@ An aside: testing numbers with decimals for exact equality is risky.  It isn't l
 
 This file contains instructions, including two additional test cases to copy/paste into the file test_tempConversions.py
 
-### The files `output` and `cyber-dojo.sh`
+### The file `output`
 
-These are files that control the Cyber Dojo website setup, and you can safely ignore them. 
+This file shows the result of the last test that you have run.    If the previous test encountered any errors, they'll be shown in this file.   Unlike the other files, you don't have the capability to make changes here--you can only look at the file's contents.
+
+### The file `cyber-dojo.sh`
+
+This file contains the command that runs each time you click the test button.    You will not need to make any changes to this file.
+
+Once you've looked over all of the code, you are ready to try running the code.
 
 ## Step 2: Click test--the tests will pass
 
@@ -75,6 +93,18 @@ Look at the instructions file, and find the additional tests. Copy/paste those i
 Click test again.  The additional tests will fail.
 
 Then, fix the code in tempConversions.py so that the tests pass.
+
+This involves changing the line that says:
+```Python
+  return ftemp - 32.0   # TODO: Fix this line of code
+```
+
+You'll need to correct the formula.  Keep in mind that in Python:
+* The `*` symbol is used for multiplication.  In algebra, we can write `1.8x` to mean `1.8` multiplied by `x`, however, this does not work in Python.  In Python you must write `1.8 * x` if you want to multiply the variable `x` by 1.8.
+* The `+` and `-` symbols are used for addition and subtraction
+* The `/` symbol is used for division, e.g '5.0/9.0' means five divided by nine.  Note that if both numerator and denominator are integers, in Python 2, the result will be an integer.
+* If you want to multiply a number 
+
 
 ## Step 3: Prepare submission for submit.cs
 
