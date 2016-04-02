@@ -86,15 +86,59 @@ Once you've looked over all of the code, you are ready to try running the code.
 
 ## Step 2: Click test--the tests will pass
 
-Click test.  The tests will pass.  But the code is still incorrect.   
+Click test.  The tests will pass, and you'll see a green circle showing that they passed, and output that ends with this output (the `in 0.01 seconds` may be slightly different, but the `2 passed` should be there):
 
-Look at the instructions file, and find the additional tests. Copy/paste those into the test_tempConversions.py file.
+```
+=========================== 2 passed in 0.01 seconds
+===========================
+```
 
-Click test again.  The additional tests will fail.
+So this seems fine.  But there's a problem: despite the two passing tests, the code is still incorrect!
 
-Then, fix the code in tempConversions.py so that the tests pass.
+The problem is that we haven't specified enough tests yet.
 
-This involves changing the line that says:
+Look at the instructions file, and find two additional tests that look like this:
+
+```Python
+def test_temp_conversions_fToC_212_100():
+    assert fToC(212.0) == 100.0
+
+def test_temp_conversions_cToF_0_32():
+    assert cToF(100.0) == 212.0
+```
+
+Copy/paste those into the `test_tempConversions.py` file.
+
+Click test again.  The additional tests will fail.  You should see a red circle indicating the failures, and a message that 2 tests passed and two failed.   The failure output should look, more or less, like this (the formatting may be a bit off):
+
+```
+=================================== FAILURES ===================================
+______________________ test_temp_conversions_fToC_212_100 ______________________
+
+    def test_temp_conversions_fToC_212_100():
+>       assert fToC(212.0) == 100.0
+E       assert 180.0 == 100.0
+E        +  where 180.0 = fToC(212.0)
+
+test_tempConversion.py:11: AssertionError
+_______________________ test_temp_conversions_cToF_0_32 ________________________
+
+    def test_temp_conversions_cToF_0_32():
+>       assert cToF(100.0) == 212.0
+E       assert 132.0 == 212.0
+E        +  where 132.0 = cToF(100.0)
+
+test_tempConversion.py:14: AssertionError
+====================== 2 failed, 1 passed in 0.02 seconds ======================
+```
+
+Look at the output above.  You'll see that the line `assert fToC(212.0) == 100.0` specifies that `fToC(212.0)` is supposed to evaluate to `100.0`.   (The `==` is the way we write *is equal to* in Python.)
+
+However, this assertion failed.    Instead of `fToC(212.0)` evaluating to `212.0`, it evaluated to `180.0`, so something is awry.   There is a similar problem with the `cToF(100.0)` evaluating to `132.0` instead of `100.0`.
+
+So, see if you can fix the code in `tempConversions.py` so that the tests pass.
+
+This first involves changing the line in the definition of the `fToC(ftemp)` function that says:
 ```Python
   return ftemp - 32.0   # TODO: Fix this line of code
 ```
@@ -102,9 +146,25 @@ This involves changing the line that says:
 You'll need to correct the formula.  Keep in mind that in Python:
 * The `*` symbol is used for multiplication.  In algebra, we can write `1.8x` to mean `1.8` multiplied by `x`, however, this does not work in Python.  In Python you must write `1.8 * x` if you want to multiply the variable `x` by 1.8.
 * The `+` and `-` symbols are used for addition and subtraction
-* The `/` symbol is used for division, e.g '5.0/9.0' means five divided by nine.  Note that if both numerator and denominator are integers, in Python 2, the result will be an integer.
-* If you want to multiply a number 
+* The `/` symbol is used for division, e.g '9.0/5.0' means nine divided by five.  Note that if both numerator and denominator are integers, in Python 2, the result will be an integer.   In this case, the result is 1 (the 0.8 part is thrown away, not rounded up to 2).
 
+Also, the order of operations in Python is that multiplication and division are done before addition and subtraction. Some examples: 
+* If `x` is 5, then `x + 2 * 3` gives us 11, not 21.  The multiplication is perfomed before the addition.
+* If `x` is 16, then `x - 6 / 2` gives us 13, not 5.   The division is performed before the subtraction.
+* If you want to force the addition or subtraction to be done first, you must use parentheses, e. g. `(x + 2) * 3` or `(x - 6) / 2`
+
+When you replace `return ftemp - 32.0` with the correct formula for converting a Fahrenheit temperature to Celsius, you should leave out the comment that says `# TODO: Fix this line of code `.
+
+You'll also want to replace the similar line in the cToF function.
+
+Each time you add some code, try clicking the test button again.  When you've fixed the formulas so that all four tests pass, you are ready to move on to the next step.
+
+That will look like this:
+
+```
+=========================== 4 passed in 0.01 seconds
+===========================
+```
 
 ## Step 3: Prepare submission for submit.cs
 
