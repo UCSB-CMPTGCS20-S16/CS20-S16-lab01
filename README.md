@@ -170,6 +170,14 @@ That will look like this:
 
 Now that we've practiced this on the cyber-dojo.org site, let's do the same thing again, but this time, building our code in IDLE, and submitting to submit.cs.
 
+As we do this, you may want to keep your cyber-dojo.org session open (unless you want to just do the entire process over again from scratch.)
+
+There are a few steps involved:
+
+* First, we'll check whether you have `pip` on your computer.  The `pip` program is the <b>P</b>ackage <b>I</b>nstaller for <b>P</b>ython, and with any luck, when you installed Python 2.7.11, `pip` came along for the ride.
+* Second, we'll use `pip` to install `pytest` which is the testing package that the cyber-dojo.org site uses to run test cases on code.
+* Third, we'll open up IDLE, and set up the same files that were in the cyber-dojo.org session.
+
 ### Step 3a: Checking whether you have pip
 
 First, open up a command line on your computer, in whatever way is appropriate to your operating system:
@@ -201,6 +209,9 @@ Phills-MacBook-Pro:~ pconrad$ pip --version
 Phills-MacBook-Pro:~ pconrad$ 
 ```
 
+### Step 3b: Installing pytest
+
+
 Assuming, though, that the `pip --version` command worked for you, try this: `pip install -U pytest`
 
 If it works properly, you'll get some output that ends with `Successfully installed pytest-2.9.1`, such as this:
@@ -213,8 +224,8 @@ Successfully installed pytest-2.9.1
 Phills-MacBook-Pro:~ pconrad$ 
 ```
 
-If that worked, 
 
+TODO: CONTINUE FROM HERE
 
 
 
