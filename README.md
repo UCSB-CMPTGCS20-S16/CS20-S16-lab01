@@ -1,7 +1,7 @@
 # CS20-S16-lab01
 UCSB-CMPTGCS20-S16, lab01 -- FtoC and CtoF with test cases
 
-This lab is based on a session from the website http://cyber-dojo.org, created just for this course.T
+This lab is based on a session from the website http://cyber-dojo.org, created just for this course.
 
 Here's the session: http://cyber-dojo.org/enter/show/E5E50A0CDF
 
