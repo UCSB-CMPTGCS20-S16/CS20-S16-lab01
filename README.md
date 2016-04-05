@@ -172,104 +172,26 @@ Now that we've practiced this on the cyber-dojo.org site, let's do the same thin
 
 As we do this, you may want to keep your cyber-dojo.org session open (unless you want to just do the entire process over again from scratch.)
 
-There are a few steps involved:
 
-* First, we'll check whether you have `pip` on your computer.  The `pip` program is the <b>P</b>ackage <b>I</b>nstaller for <b>P</b>ython, and with any luck, when you installed Python 2.7.11, `pip` came along for the ride.
-* Second, we'll use `pip` to install `pytest` which is the testing package that the cyber-dojo.org site uses to run test cases on code.
-* Third, we'll open up IDLE, and set up the same files that were in the cyber-dojo.org session.
-
-### Step 3a: Checking whether you have pip
-
-First, open up a command line on your computer, in whatever way is appropriate to your operating system:
-* Mac OS X: Open a Terminal window (here's [how] (http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line))
-* Windows: Open a Command Prompt window (here's [how](http://www.digitalcitizen.life/7-ways-launch-command-prompt-windows-7-windows-8))
-* Linux: Open a shell prompt (If you need to ask how, I wonder: should you really be using Linux?)
-
-The reason we need a command prompt is that we are going to install a Python module using the `pip` command.
-
-The `pip` command allows us to extend the capabilities of Python with "add-ons". The add-on we going to add is one that helps us do testing.
-
-First, make sure that the `pip` command works on your system.  Try typing `pip --version` and pressing enter
-* That's two hyphens, i.e. `--` in front of the word `version`
-* Here's an example of what that might look like:
-
-```
-Phills-MacBook-Pro:~ pconrad$ pip --version
-pip 7.1.2 from /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages (python 2.7)
-Phills-MacBook-Pro:~ pconrad$ 
-```
-
-If you get output such as this, that's a good sign.
-
-If instead, you get something like this, it's a bad sign: it means that `pip` is not installed on your system. In that case, post to Piazza, or ask for help during class or the instructor's office hours.
-
-```
-Phills-MacBook-Pro:~ pconrad$ pip --version
--bash: pip: command not found
-Phills-MacBook-Pro:~ pconrad$ 
-```
-
-### Step 3b: Installing pytest
-
-
-Assuming, though, that the `pip --version` command worked for you, try this: `pip install -U pytest`
-
-If it works properly, you'll get some output that ends with `Successfully installed pytest-2.9.1`, such as this:
-
-```
-Phills-MacBook-Pro:~ pconrad$ pip install -U pytest
-Collecting pytest
-...
-Successfully installed pytest-2.9.1
-Phills-MacBook-Pro:~ pconrad$ 
-```
-
-### Step 3c: Make a cs20/lab01 folder
+### Step 3a: Make a cs20/lab01 folder
 
 
 Somewhere on your computer's disk space (i.e. on your computer's hard drive), create a folder called cs20.  Inside that folder, create another folder called lab01.  
 
 In general, its probably a good idea to keep your work for this class all in the same folder, and within that folder, create a separate folder for each lab.   This isn't exactly *required* (no-one is going to check), but it's probably a good habit to develop.   Also, the rest of the instructions will be written based on the assumption that you did things this way.  So, I'd strongly encourage you to do it. 
 
-### Step 3d: Set up the files `tempConversions.py` and `test_tempConversions.py` in IDLE
+### Step 3b: Set up the files `tempConversions.py` in that directory.
 
-Open IDLE.  You'll see the Python prompt `>>>` in the window that opens up automatically.
+Open up IDLE, and select "File -> New".  Copy and paste the contents of tempConversions.py into that window.  Then choose File->Save.
 
-In IDLE, go to the File menu, and select New.   An empty window should pop up where you can type in code.
-
-In that window, put the code from the `tempConversions.py` file that you were working with in the cyber-dojo.org session.   Save the file under the name `tempConversions.py`, inside the cs20/lab01 folder that you created earlier.
-
-Now, do the same thing with a file called `test_tempConversions.py`&mdash;put the contents of `test_tempConversions.py` fron your cyber-dojo.org session into a file called `test_tempConversions.py` and then save it in the cs20/lab01 folder that you created.
-
-### Step 3e: Navigate your terminal / command prompt session to the directory cs20/lab01
+### Step 3c: Navigate your terminal / command prompt session to the directory cs20/lab01
 
 Now, in the terminal session / command prompt session that you opened up in Step 3a, you need to navigate to the cs20/lab00 folder.  The way you do that depends on what your Operating System is: Mac, Windows or Linux:
 
 * On Mac OS or Linux, use the cd command
 * On Windows, you also use the cd command (provided you are already on the correct drive).
 
-Once you are in the correct folder, you should be able to type  `ls` (on Mac/Linux) or `dir` (on Windows), and see the files you created, i.e. `tempConversions.py` and `test_tempConversions.py`.    Once you can see that, you are ready for the next step.
-
-### Step 3f: Run the tests using pytest
-
-Now, you are going to type the same command that the cyber-dojo.org site uses to run your tests.
-
-Here's what to type at the command line: `python -m pytest *test*.py`
-
-That's the same thing you'll see in the file `cyber-dojo.sh` that shows up on the cyber-dojo.org web site, and its the command that runs the tests.  If it works, it should look something like this:
-
-```
-Phills-MacBook-Pro:lab01 pconrad$ python -m pytest *test*.py
-============================= test session starts ==============================
-platform darwin -- Python 2.7.11, pytest-2.9.1, py-1.4.31, pluggy-0.3.1
-rootdir: /Users/pconrad/cs20/lab01, inifile: 
-collected 4 items 
-
-test_tempConversions.py ....
-
-=========================== 4 passed in 0.01 seconds ===========================
-Phills-MacBook-Pro:lab01 pconrad$ 
-```
+Once you are in the correct folder, you should be able to type  `ls` (on Mac/Linux) or `dir` (on Windows), and see the file you created, i.e. `tempConversions.py`     Once you can see that, you are ready for the next step.
 
 If that works, then you are ready to upload your tempConversions.py file to submit.cs
 
@@ -280,7 +202,6 @@ https://submit.cs.ucsb.edu/form/project/458/submission
 If the tests pass, you are finished!
 
 If you have trouble, ask during class, or post your questions to Piazza.
-
 
 
 # For further exploration
