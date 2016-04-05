@@ -275,8 +275,11 @@ If that works, then you are ready to upload your tempConversions.py file to subm
 
 Here's where to upload it:
 
-TODO: CONTINUE FROM HERE
+https://submit.cs.ucsb.edu/form/project/458/submission
 
+If the tests pass, you are finished!
+
+If you have trouble, ask during class, or post your questions to Piazza.
 
 
 
